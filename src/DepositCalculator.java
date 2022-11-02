@@ -29,10 +29,10 @@ public class DepositCalculator {
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         action = scanner.nextInt();
 
-        double out = 0;
+        double investmentResult = 0;
 
         if (action == 1) {
-            result = calculateSimplePercent(amount, 0.06, depositTerm);
+            investmentResult = calculateSimplePercent(amount, 0.06, depositTerm);
         } else if (action == 2) {
             investmentResult = calculateComplexPercent(amount, 0.06, depositTerm);
         }
